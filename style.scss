@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Edu+VIC+WA+NT+Beginner&display=swap');
+// media
+$Mobile: 375px;
+$Desktop: 1440px;
+
+// color
+$main-bgc :hsl(217, 54%, 11%);
+$card-bgc :hsl(216, 50%, 16%);
+$line-color : hsl(215, 32%, 27%);
+$color-1:hsl(0, 0%, 100%);
+
+//font
+$font-size: 18px;
+$font-family:cursive;
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $main-bgc;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.card{
+    background-color: $card-bgc;
+    width: 360px;
+    height: 570px;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 4px rgb(1, 23, 37);
+
+    &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        padding-top: 15px;
+    }
+    &-title{
+        padding-top: 15px;
+        margin-left:25px;
+        font-size: $font-size;
+        font-weight: 00;
+        color: $color-1;
+    }
+    &-text{
+        padding-top: 15px;
+        margin-left: 25px;
+        margin-right: 35px;
+        color:$color-1;
+        opacity: 60%;
+        font-size: $font-size;
+    }
+
+    &-sub{
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        margin-left: 25px;
+        align-items: center;
+        gap: 10px;
+        font-size: $font-size;
+        font-weight:600;
+        color: hsl(178, 100%, 50%);
+    }
+
+    &-sub-2{
+        display: flex;
+        flex-direction: row;
+        margin-left: 90px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: $font-size;
+        color: $color-1;
+        opacity: 60%;
+    }
+
+    &-footer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 25px;
+
+        &-img{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-1;
+            font-size: $font-size;
+            margin-left: 10px;
+        }
+    }
+
+
+ 
+}
+
+@media (max-width:375px){
+    .card{
+        background-color: $card-bgc;
+        width: 350px;
+        height: 550px;
+        margin: auto;
+        margin-top: 30%;
+        margin-bottom: 10%;
+        border-radius: 10px;
+        box-shadow: 4px 4px 2px 4px rgb(1, 23, 37);
+    
+        &-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            padding-top: 15px;
+        }
+        &-title{
+            padding-top: 15px;
+            margin-left:25px;
+            font-size: $font-size;
+            font-weight: 600;
+        }
+        &-text{
+            padding-top: 15px;
+            margin-left: 25px;
+            color:$color-1;
+            opacity: 60%;
+            font-size: $font-size;
+        }
+    
+        &-sub{
+            display: flex;
+            flex-direction: row;
+            padding-top: 15px;
+            margin-left: 25px;
+            align-items: center;
+            gap: 10px;
+            font-size: $font-size;
+            font-weight:600;
+            color: hsl(178, 100%, 50%);
+        }
+    
+        &-sub-2{
+            display: flex;
+            flex-direction: row;
+            margin-left: 90px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: $font-size;
+            color: $color-1;
+            opacity: 60%;
+        }
+    
+        &-footer{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 25px;
+    
+            &-img{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            &-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-1;
+                font-size: $font-size;
+                margin-left: 10px;
+            }
+        }
+    
+    
+     
+    }  
+}
+
+@media (max-width:1400px){
+    .card{
+        background-color: $card-bgc;
+        width: 350px;
+        height: 550px;
+        margin: auto;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        border-radius: 10px;
+        box-shadow: 4px 4px 2px 4px rgb(1, 23, 37);
+    
+        &-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            padding-top: 15px;
+        }
+        &-title{
+            padding-top: 15px;
+            margin-left:25px;
+            font-size: $font-size;
+            font-weight: 600;
+        }
+        &-text{
+            padding-top: 15px;
+            margin-left: 25px;
+            color:$color-1;
+            opacity: 60%;
+            font-size: $font-size;
+        }
+    
+        &-sub{
+            display: flex;
+            flex-direction: row;
+            padding-top: 15px;
+            margin-left: 25px;
+            align-items: center;
+            gap: 10px;
+            font-size: $font-size;
+            font-weight:600;
+            color: hsl(178, 100%, 50%);
+        }
+    
+        &-sub-2{
+            display: flex;
+            flex-direction: row;
+            margin-left: 90px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: $font-size;
+            color: $color-1;
+            opacity: 60%;
+        }
+    
+        &-footer{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 25px;
+    
+            &-img{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            &-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-1;
+                font-size: $font-size;
+                margin-left: 10px;
+            }
+        }
+    
+    
+     
+    }  
+}
